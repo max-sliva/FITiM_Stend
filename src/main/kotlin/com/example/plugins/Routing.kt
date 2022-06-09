@@ -6,6 +6,8 @@ import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.response.*
 import io.ktor.server.request.*
+import jssc.SerialPort
+import jssc.SerialPortList
 import java.io.File
 
 fun Application.configureRouting() {
@@ -18,5 +20,6 @@ fun Application.configureRouting() {
         get("/") {
             call.respondFile(File("Stend/index.html"))
         }
+
     }
 }

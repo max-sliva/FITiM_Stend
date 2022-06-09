@@ -8,5 +8,6 @@ fun main() {
     embeddedServer(Netty, port = 80, host = "0.0.0.0") {
         configureRouting()
         configureSockets()
+        //configureArduinoConnect()
     }.start(wait = true)
 }
